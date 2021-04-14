@@ -46,7 +46,7 @@ The goal of our agent is to maintain its position at the target location for as 
 
 The task is episodic and in order to solve the environment the agent must get an average score of +30 over 100 consecutive episodes, where a reward of +0.1 is gained for each step at target location.
 
-An example of satifactory solution is 
+An example of satisfactory solution is 
 
 ![Benchmark][image3]
 
@@ -147,8 +147,8 @@ The ML-Agents Toolkit contains several components:
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) (version 1) or [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) (version 2) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-- Place the file in the working directoty folder and unzip (or decompress) the file. 
-      
+- For Version 2, 20 agents no visualization environment, place extracted files in the directory `./Reacher_LinuxNoVis_20/` to get  `./Reacher_LinuxNoVis_20/Reacher.x86_64`.
+
 
 ### Instructions
 
@@ -166,9 +166,7 @@ You can either follow the steps in the python notebook `Continuous_Control.ipynb
 
 5. Python module `ddpg_interact.py` defines how the agent interacts with the environment either learning or following best policy. 
 
-6. The directory `./Reacher_LinuxNoVis_20/Reacher.x86_64` contains the Unity compiled program for the environment with no visualization.
-
-7. The PyTorch file `Trained_Agent.pth` is the trained model with weights of the Q Network.  
+7. The PyTorch files `./Data/checkpoint_actor.pth`,`./Data/checkpoint_critic.pth` are the trained models with weights of the actor and critic networks respectively.  
 
 
 ### GPU
