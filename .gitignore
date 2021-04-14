@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+##EXE  AND data files
+./Reacher_Linux_NoVis_20/*
+./*.aux
+./*.out
+./*.toc
