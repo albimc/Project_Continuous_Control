@@ -162,7 +162,7 @@ You can either follow the steps in the python notebook `Continuous_Control.ipynb
 
 3. Python module `ddpg_agent.py` defines class Agent that learns by interacting with environment.
 
-4. Python module `ddpg_model.py` defines Actor and Critic deep neural networks. 
+4. Python module `ddpg_model.py` defines class Actor and Critic deep neural networks. 
 
 5. Python module `ddpg_interact.py` defines how the agent interacts with the environment either learning or following best policy. 
 
